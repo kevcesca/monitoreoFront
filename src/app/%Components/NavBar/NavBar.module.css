@@ -1,0 +1,28 @@
+.NavbarContainer {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+
+
+.botonNavbar {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 4px;
+    /* Ajusta este valor si deseas más espacio alrededor del ícono */
+}
+
+.botonNavbar:hover {
+    background-color: #2971ba9b;
+    border-radius: 10%;
+}

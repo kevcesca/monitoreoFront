@@ -1,5 +1,7 @@
+// src/app/layout.js
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Wrapper from "./%Components/Wrapper/Wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
+      <body className={inter.className}>
+        <Wrapper>
+          {children}
+        </Wrapper>
+      </body>
     </html>
   );
 }
