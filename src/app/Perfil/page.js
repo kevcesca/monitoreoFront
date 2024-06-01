@@ -8,6 +8,20 @@ export default function Perfil() {
     const [usuario, setUsuario] = useState(null);
 
     useEffect(() => {
+        const usuario = {
+            nombre: "Fidel Pérez González",
+            email: "fidel.perez@programadoresjava.mx",
+            telefono: "5532745538",
+            emailSecundario: "fidel.perez@programadoresjava.mx",
+            licenciaKey: "xxxx xxxx xxxx xxxx"
+        };
+    
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+    }, []);
+    
+
+
+    useEffect(() => {
         const storedUser = localStorage.getItem('usuario');
         if (storedUser) {
             setUsuario(JSON.parse(storedUser));
