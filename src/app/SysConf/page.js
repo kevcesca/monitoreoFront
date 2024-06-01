@@ -4,7 +4,7 @@ import 'primereact/resources/primereact.min.css';  // Importa los estilos de Pri
 import 'primeicons/primeicons.css';
 import TablaRecursos from "../%Components/TablasSysconf/TablaRecursos";
 
-export default function Home() {
+export default function SysConf() {
     return (
         <main className={styles.main}>
             <h1>Hola mundo 2</h1>

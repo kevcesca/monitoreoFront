@@ -11,7 +11,7 @@ export default function AppBar() {
     const items = [
         { label: 'Home', icon: 'pi pi-home', command: () => router.push('/') },
         { label: 'Configuración del sistema', icon: 'pi pi-cog', command: () => router.push('/SysConf') },
-        { label: 'Usuarios', icon: 'pi pi-user', command: () => router.push('/Usuarios') },
+        { label: 'Usuarios', icon: 'pi pi-user', command: () => router.push('/Perfil') },
         { label: 'Visualización', icon: 'pi pi-chart-line', command: () => router.push('/Visualizacion') }
     ];
 
@@ -25,7 +25,7 @@ export default function AppBar() {
             case '/SysConf':
                 setActiveIndex(1);
                 break;
-            case '/Usuarios':
+            case '/Perfil':
                 setActiveIndex(2);
                 break;
             case '/Visualizacion':
