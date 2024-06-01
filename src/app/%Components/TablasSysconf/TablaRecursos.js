@@ -13,7 +13,7 @@ export default function TablaRecursos() {
 
     return (
         <div className="card">
-            <DataTable value={products} sortMode="multiple" tableStyle={{ minWidth: '50rem' }}>
+            <DataTable value={products} sortMode="multiple" tableStyle={{ minWidth: '80rem' }}>
                 <Column field="dispositivo" header="Dispositivo" sortable style={{ width: '20%' }}></Column>
                 <Column field="ip" header="IP" sortable style={{ width: '20%' }}></Column>
                 <Column field="recurso" header="Recurso" sortable style={{ width: '20%' }}></Column>
